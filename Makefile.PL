@@ -1,4 +1,4 @@
-# $Id: Makefile.PL,v 1.2 2002/09/09 17:01:48 comdog Exp $
+# $Id: Makefile.PL,v 1.3 2002/10/09 05:57:49 comdog Exp $
 use ExtUtils::MakeMaker;
 
 my $tests = do {
@@ -8,21 +8,23 @@ my $tests = do {
 	
 WriteMakefile
         (
-        'NAME'      => 'Test::Env',
-        'ABSTRACT'  => 'Test the environment',
-        'VERSION'   => '0.5_02',
- 		'PREREQ_PM' => {
- 			Test::Pod             => 0,
- 			Test::More            => 0,
- 			Test::Builder::Tester => 0,
- 			File::Find::Rule      => 0,
+        'NAME'           => 'Test::Env',
+        'ABSTRACT'       => 'Test the environment',
+        'VERSION_FROM'   => 'lib/Env.pm',
+ 		'PREREQ_PM'      => {
+ 			'File::Find::Rule'      => '0',
+ 			'Test::Builder'         => '0',
+ 			'Test::Builder::Tester' => '0',
+  			'Test::More'            => '0',
+			'Test::Pod'             => '0',
+ 			'Test::Prereq'          => '0',
  			},
-        'PM' => 
-        	{
+        'PM' => {
             'lib/Env.pm'     => '$(INST_LIBDIR)/Env.pm',
 			},
  
  		depend => { Makefile => 't/test_manifest' },
-        test   => { TESTS => $tests }
+        test   => { TESTS    => $tests },
+        clean  => { FILES    => 'Test-Env-*' },
         );
 
