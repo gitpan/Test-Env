@@ -1,4 +1,4 @@
-# $Id: Env.pm,v 1.2 2002/10/09 05:57:49 comdog Exp $
+# $Id: Env.pm,v 1.4 2004/09/08 01:23:13 comdog Exp $
 package Test::Env;
 use strict;
 
@@ -6,7 +6,7 @@ use base qw(Exporter);
 use vars qw(@EXPORT $VERSION);
 
 @EXPORT  = qw(env_ok);
-$VERSION = 0.06;
+$VERSION = 0.11;
 
 use Test::Builder;
 
@@ -25,8 +25,7 @@ Test::Env - test the environment
 
 =head1 DESCRIPTION
 
-
-=head1 FUNCTIONS
+=head2 Functions
 
 =over 4
 
@@ -40,7 +39,7 @@ sub env_ok($$)
 	{
 	my $name  = shift;
 	my $value = shift;
-	
+
 	unless( exists $ENV{$name} )
 		{
 		$Test->ok(0);
@@ -59,16 +58,26 @@ sub env_ok($$)
 		$Test->ok(1);
 		}
 	}
-	
+
 =back
+
+=head1 SOURCE AVAILABILITY
+
+This source is part of a SourceForge project which always has the
+latest sources in CVS, as well as all of the previous releases.
+
+	http://sourceforge.net/projects/brian-d-foy/
+
+If, for some reason, I disappear from the world, one of the other
+members of the project can shepherd this module appropriately.
 
 =head1 AUTHOR
 
-brian d foy, E<lt>brian d foyE<gt>
+brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT
 
-Copyright 2002, brian d foy, All rights reserved
+Copyright 2002-2004, brian d foy, All rights reserved
 
 You can use this module under the same terms as Perl itself.
 

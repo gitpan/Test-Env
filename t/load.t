@@ -1,12 +1,6 @@
-# $Id: load.t,v 1.2 2002/10/09 05:56:25 comdog Exp $
+# $Id: load.t,v 1.3 2004/09/08 01:23:13 comdog Exp $
 BEGIN {
-	use File::Find::Rule;
-	@classes = map { my $x = $_;
-		$x =~ s|^blib/lib/||;
-		$x =~ s|/|::|g;
-		$x =~ s|\.pm$||;
-		$x;
-		} File::Find::Rule->file()->name( '*.pm' )->in( 'blib/lib' );
+	@classes = qw(Test::Env);
 	}
 
 use Test::More tests => scalar @classes;
