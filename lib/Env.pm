@@ -1,4 +1,4 @@
-# $Id: Env.pm,v 1.5 2005/03/08 22:53:02 comdog Exp $
+# $Id: Env.pm,v 1.6 2006/05/18 02:30:03 comdog Exp $
 package Test::Env;
 use strict;
 
@@ -6,7 +6,7 @@ use base qw(Exporter);
 use vars qw(@EXPORT $VERSION);
 
 @EXPORT  = qw(env_ok);
-$VERSION = sprintf "%d.%02d", q$Revision: 1.5 $ =~ m/ (\d+) \. (\d+) /xg;
+$VERSION = sprintf "%d.%02d", q$Revision: 1.6 $ =~ m/ (\d+) \. (\d+) /xg;
 
 use Test::Builder;
 
@@ -77,7 +77,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT
 
-Copyright 2002-2005, brian d foy, All rights reserved
+Copyright 2002-2006, brian d foy, All rights reserved
 
 You can use this module under the same terms as Perl itself.
 

@@ -1,4 +1,10 @@
-# $Id: Changes,v 1.3 2004/09/08 01:24:43 comdog Exp $
+# $Id: Changes,v 1.5 2006/05/18 02:42:22 comdog Exp $
+
+1.06 - Wed May 17 21:31:07 2006
+	* Updated dist for copyright and kwalitee. No need to upgrade.
+
+1.05 - Tue Mar  8 17:53:53 2005
+	* Added POD coverage tests: no need to upgrade
 
 0.11 - Tue Sep  7 20:24:22 2004
 * cleaned up the distribution and added a README
