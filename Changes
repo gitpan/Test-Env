@@ -1,4 +1,7 @@
-# $Id: Changes,v 1.6 2007/01/10 04:46:46 comdog Exp $
+# $Id: Changes 2300 2007-08-13 02:48:10Z comdog $
+
+1.08 - Sun Aug 12 21:48:32 2007
+	* dist cleanup to fix META.yml. No need to upgrade.
 
 1.07 - Tue Jan  9 22:46:57 2007
 	* updated copyright and license info

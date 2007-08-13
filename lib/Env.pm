@@ -1,4 +1,4 @@
-# $Id: Env.pm,v 1.7 2007/01/10 04:46:23 comdog Exp $
+# $Id: Env.pm 2299 2007-08-13 02:47:06Z comdog $
 package Test::Env;
 use strict;
 
@@ -6,7 +6,7 @@ use base qw(Exporter);
 use vars qw(@EXPORT $VERSION);
 
 @EXPORT  = qw(env_ok);
-$VERSION = sprintf "%d.%02d", q$Revision: 1.7 $ =~ m/ (\d+) \. (\d+) /xg;
+$VERSION = 1.08;
 
 use Test::Builder;
 

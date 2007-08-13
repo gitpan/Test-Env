@@ -1,4 +1,4 @@
-# $Id: load.t,v 1.3 2004/09/08 01:23:13 comdog Exp $
+# $Id: load.t 1442 2004-09-08 01:23:13Z comdog $
 BEGIN {
 	@classes = qw(Test::Env);
 	}
